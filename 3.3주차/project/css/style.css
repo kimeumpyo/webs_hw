@@ -41,6 +41,10 @@ img {
   border: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* 상단 로고 메뉴 영역 S */
 
 header {
@@ -160,7 +164,7 @@ main .mid_banners img {
 }
 
 /* 메인 하단 상품 */
-.mid_display{
+.mid_display {
   display: block;
 }
 
@@ -173,7 +177,7 @@ main .mid_banners img {
   margin: 0;
 }
 
-.more_btn_box{
+.more_btn_box {
   display: none;
 }
 
@@ -269,7 +273,7 @@ main .mid_banners img {
   margin: 10px 0 2px;
 }
 
-.star{
+.star {
   height: 11px;
 }
 
@@ -301,13 +305,13 @@ main .mid_banners img {
 }
 
 /* 메인 아래 배너 */
-.main_bottom_banner{
+.main_bottom_banner {
   padding: 10px 0;
   font-size: 0;
   margin-bottom: 10px;
 }
 
-.main_bottom_banner img{
+.main_bottom_banner img {
   width: 100%;
   font-size: 0;
 }
@@ -320,13 +324,13 @@ main .mid_banners img {
 }
 
 #footer .logo {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 #footer .logo img {
-    width: 79px;
-    display: block;
-    margin: 0 auto;
+  width: 79px;
+  display: block;
+  margin: 0 auto;
 }
 
 .center_phone {
@@ -360,7 +364,7 @@ main .mid_banners img {
   margin-bottom: 8px;
 }
 
-.business_info .tit > span {
+.business_info .tit>span {
   color: #878787;
   font-size: 12px;
   font-weight: 600;
@@ -369,7 +373,7 @@ main .mid_banners img {
   background-size: 15px;
 }
 
-.business_info.on .tit > span {
+.business_info.on .tit>span {
   background: url(../img/markers/footer/more_up.png) no-repeat right center;
   background-size: 15px;
 }
@@ -423,7 +427,12 @@ main .mid_banners img {
   padding: 0 11px;
 }
 
+/* 하단 고정 링크 */
+
+
 /* 하단 고정 메뉴 S */
+
+
 .bottom_quicks {
   position: fixed;
   bottom: 0;
@@ -438,16 +447,17 @@ main .mid_banners img {
   justify-content: space-around;
   /* 동일한 여백 */
 }
+
 .more {
   height: 30px;
   width: 26px;
-  background: url(/project/images/more_menu.png) no-repeat center center;
+  background: url(../images/more_menu.png) no-repeat center center;
   background-size: 26px;
   border: 0;
   margin-top: 6px;
 }
 
-.bottom_quicks a{
+.bottom_quicks a {
   width: calc(100% / 5);
 }
 
@@ -464,20 +474,34 @@ main .mid_banners img {
 
 .bottom_quicks .icon1 {
   background: url("../images/pen.png") no-repeat center;
-  background-size: 26px;
+  background-size: 29px;
 }
 
 .bottom_quicks .icon2 {
   background: url("../images/comment.png") no-repeat center;
-  background-size: 38px;
+  background-size: 42px;
 }
 
 .bottom_quicks .icon3 {
   background: url("../images/truck.png") no-repeat center;
-  background-size: 38px;
+  background-size: 42px;
 }
 
 .bottom_quicks .icon4 {
   background: url("../images/person.png") no-repeat center;
-  background-size: 20px;
+  background-size: 22px;
+}
+
+#bottom_quick_links {
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+  z-index: 10;
+}
+
+#bottom_quick_links img {
+  display: block;
+  width: 50px;
+  cursor: pointer;
+  margin-top: 10px;
 }
